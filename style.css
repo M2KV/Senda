@@ -228,3 +228,9 @@ main article section .more:hover
     color: white;
     background-color: rgb(23, 112, 23);
 }
+footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
