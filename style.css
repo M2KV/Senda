@@ -187,3 +187,44 @@ header div.banner .right-arrow
     border: none;
     cursor: pointer;
 }
+main article 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem;
+    gap: 2rem;
+}
+main article section
+{
+    flex-basis: 30%;
+    text-align: justify-all;
+}
+main article section.picture
+{
+    flex-basis: 45%;
+    text-align: center;   
+}
+main article section h1
+{
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(36, 114, 25);
+    margin-top: 0;
+}
+main article section .more
+{
+    padding: .4rem .8rem;
+    border-radius: .2rem;
+    color: rgb(23, 102, 23);
+    border: .1rem solid rgb(30, 143, 30);
+    -webkit-transition: .3s;
+    -ms-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+}
+main article section .more:hover
+{
+    color: white;
+    background-color: rgb(23, 112, 23);
+}
