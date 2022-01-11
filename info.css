@@ -252,3 +252,13 @@ nav div.header-title div .right-title div .shopping-car
     border: .1rem solid lightgray;
     padding: .3rem;
 }
+.footer
+{
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: block;
+  width: 100%;
+  position: relative;
+}
