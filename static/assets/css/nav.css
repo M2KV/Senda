@@ -29,6 +29,28 @@ header nav .title-navbar > span
     flex: 0 1 25vw;
     max-height: 2.9rem;
 }
+header nav .title-navbar > span.mid-title
+{
+    position: relative;
+    display: inline-block;
+    height: 2.9rem;
+}
+header nav .title-navbar > span.mid-title > img
+{
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    height: 45px;
+    opacity: 1;
+    -webkit-transition: 1s all ease-in-out;
+    -ms-transition: 1s all ease-in-out;
+    -moz-transition: 1s all ease-in-out;
+    transition: 1s all ease-in-out;
+}
+header nav .title-navbar > span.mid-title > img.effect
+{
+    opacity: 0;
+}
 header nav .title-navbar span button, header nav .title-navbar > span a:nth-child(1)
 {
     font-weight: 600;
@@ -229,7 +251,7 @@ header nav .content-navbar > a.link:hover::after
 .banner > .slide > img[alt="banner"]
 {
     width: 100%;
-    height: 35rem;
+    height: 100%;
     position: absolute;
     left: 0%;
     transition: .4s all ease-in-out;

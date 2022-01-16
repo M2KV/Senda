@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta name="content-type" content="text/html" charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="theme-color" content="#333" />
-	<meta name="msapplication-navbutton-color" content="#DCDCDC" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#DCDCDC" />
+    <meta name="content-type" content="text/html" charset="utf-8" />
+	<meta name="theme-color" content="#FFFFFF" />
+	<meta name="msapplication-navbutton-color" content="#FFFFFF" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF" />
 	<meta name="referrer" content="no-referrer-when-downgrade" />
 	<meta name="robots" content="all" />
+    
 	<meta name="author" content="ReoIT" />
 	<meta name="description" content="Website cung cấp thông tin, buôn bán về các loại cây sen đá được nuôi trồng cẩn thận nhằm cung cấp sản phẩm chất lượng cho khách hàng." />
 	<meta name="keywords" content="Senda, sen đá, cây sen đá" />
-	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />
-	<meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale = 5.0, minimum-scale = 1.0, user-scalable = yes" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes" />
+	
+    <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     
     <title>Senda</title>
     
-    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <link rel="manifest" href="./manifest.json" crossorigin="use-credentials" />
+    <link rel="canonical" href="https://localhost"/>
+
+    <link rel="icon" type="image/x-icon" sizes="256x256" href="./favicon.ico" />
+    <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="./favicon.png" />
+
     <link rel="stylesheet" href="static/assets/css/all.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="static/assets/css/nav.css" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+    <script async language="javascript" type="text/javascript" src="https://kit.fontawesome.com/9817796ed2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -34,6 +42,7 @@
                 </span>
                 <span class="mid-title">
                     <img width="50px" src="static/assets/img/logo.jpg" alt="Senda logo" />
+                    <img width="50px" src="favicon.png" alt="Senda logo" />
                 </span>
                 <span class="right-title">
                     <a title="Đăng nhập" href="./login.html">Đăng nhập</a>
@@ -125,6 +134,10 @@
         © 2017 Bản quyền Senda Co., Ltd
     </footer>
     <script type="text/javascript">
+        setInterval(() => {
+            document.querySelector('header nav .title-navbar > span.mid-title > img:nth-child(2)').classList.toggle('effect');
+        }, 4000);
+
         document.querySelector('.shopping-car').addEventListener('click', (e) => {
             document.querySelector('.shopping-cart').classList.toggle('show');
         });
