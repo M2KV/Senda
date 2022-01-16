@@ -7,6 +7,8 @@ hmtl, body
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     scroll-behavior: smooth;
+    -moz-font-display: optional;
+    -ms-font-display: optional;
     -moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	-ms-font-smoothing: antialiased;
@@ -32,8 +34,11 @@ button
 article.main-content
 {
     display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-direction: column;
     padding: 10%;
+    padding-top: 7%;
     gap: 10rem;
 }
 article.main-content > section.slide
@@ -41,7 +46,7 @@ article.main-content > section.slide
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 7rem;
 }
 article.main-content > section.slide > span.image
 {
