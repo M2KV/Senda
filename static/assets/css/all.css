@@ -39,7 +39,7 @@ article.main-content
     flex-direction: column;
     padding: 10%;
     padding-top: 7%;
-    gap: 10rem;
+    gap: 9rem;
 }
 article.main-content > section.slide
 {
