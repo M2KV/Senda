@@ -1,0 +1,273 @@
+/* NAVBAR */
+header nav
+{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    z-index: 1;
+}
+
+header nav div.title-navbar, header nav div.content-navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 0rem;
+    border-bottom: .1rem solid lightgray;
+}
+
+/* TITLE NAVBAR */
+header nav div.title-navbar
+{
+    padding: 1rem 0rem;
+}
+header nav .title-navbar > span
+{
+    display: inline-block;
+    flex: 0 1 25vw;
+    max-height: 2.9rem;
+}
+header nav .title-navbar span button, header nav .title-navbar > span a:nth-child(1)
+{
+    font-weight: 600;
+}
+header nav .title-navbar > span > a
+{
+    margin: auto .6rem;
+}
+header nav .title-navbar > span.right-title > span.lang-comp > .active
+{
+    color: rgb(22, 112, 108);
+}
+header nav .title-navbar > span.right-title > span.lang-comp > button
+{
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+header nav .title-navbar > span.right-title > span.lang-comp > button:hover
+{
+    color: rgb(27, 143, 137);
+}
+header nav .title-navbar > span.right-title > a
+{
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+header nav .title-navbar > span.right-title > a:hover
+{
+    color: rgb(27, 143, 137);
+}
+header nav .title-navbar span.shopping-comp
+{
+    position: relative;
+    text-align: left;
+}
+header nav .title-navbar span button.shopping-car
+{
+    display: inline-block;
+    font-weight: normal;
+    margin-left: .7rem;
+    padding: .5rem .9rem;
+    border: .1rem solid rgb(78, 108, 163);
+    border-radius: .2rem;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+header nav .title-navbar span .shopping-cart
+{
+    position: absolute;
+    top: calc(1rem + 13px);
+    left: 0;
+    right: 0;
+    max-height: 0rem;
+    padding: 0rem;
+    background-color: white;
+    border-radius: .3rem;
+    text-align: center;
+    opacity: 0;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+header nav .title-navbar span .shopping-cart.show
+{
+    max-height: 20rem;
+    padding: 2rem;
+    box-shadow: 0rem .1rem .4rem 0rem rgba(0, 0, 0, .13);
+    border: 1px solid lightgray;
+    left: calc(0% - 25rem);
+    opacity: 1;
+}
+header nav .title-navbar span .shopping-cart > .heading-content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+header nav .title-navbar span .shopping-cart > .heading-content a.more
+{
+    text-decoration: underline;
+    color: rgb(16, 60, 97);
+    font-weight: 600;
+}
+header nav .title-navbar span .shopping-cart > .shopping-content
+{
+    min-height: 5rem;
+}
+header nav .title-navbar span .shopping-cart > div
+{
+    margin: 1rem;
+}
+header nav .title-navbar span .shopping-cart > div > strong
+{
+    font-size: 20px;
+    margin-left: .5rem;
+}
+header nav .title-navbar span .shopping-cart > div a.credit-btn
+{
+    border: .1rem solid rgb(78, 108, 163);
+    padding: .7rem 1.5rem;
+    border-radius: .2rem;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+header nav .title-navbar span .shopping-cart > div a.credit-btn:hover
+{
+    background-color: rgb(59, 109, 139);
+    color: white;
+}
+header nav .title-navbar span button.shopping-car:hover > i
+{
+    color: white;
+}
+header nav .title-navbar span button.shopping-car:hover
+{
+    background-color: rgb(59, 109, 139);
+    color: white;
+}
+header nav .title-navbar span button.shopping-car, header nav .title-navbar span button.shopping-car > i
+{
+    color: rgb(4, 50, 78);
+}
+
+/* CONTENT-NAVBAR */
+header nav .content-navbar
+{
+    gap: 3rem;
+    box-shadow: 0rem .1rem .3rem 0rem rgba(0, 0, 0, .2);
+}
+header nav .content-navbar > a.link.active
+{
+    color: rgb(10, 71, 78);
+}
+header nav .content-navbar > a.link
+{
+    position: relative;
+    padding: .5rem .9rem;
+    font-weight: 600;
+    color: rgb(54, 54, 54);
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    transition: .2s;
+}
+header nav .content-navbar > a.link:hover
+{
+    color: rgb(27, 143, 137);
+}
+header nav .content-navbar > a.link::after
+{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: rgb(55, 194, 187);
+    height: .2rem;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    border-radius: 1rem;
+    -webkit-transition: .3s; 
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    transition: .3s;
+}
+header nav .content-navbar > a.link:hover::after
+{
+    left: 10%;
+    right: 10%;
+}
+
+/* BANNER */
+.banner
+{
+    margin-top: 8rem;
+}
+.banner > .slide 
+{
+    position: relative;
+    display: block;
+    height: 35rem;
+    text-align: center;
+    overflow: hidden;
+}
+.banner > .slide > img[alt="banner"]
+{
+    width: 100%;
+    height: 35rem;
+    position: absolute;
+    left: 0%;
+    transition: .4s all ease-in-out;
+}
+.banner > .slide > img[alt="banner"].prev
+{
+    left: -100%;
+}
+.banner > .slide > img[alt="banner"].next
+{
+    left: 100%;
+}
+.banner > .slide > .controls
+{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.banner > .slide > .controls > button.dot
+{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: rgba(181, 232, 255, .4);
+    border-radius: 50%;
+    margin: .4rem;
+    border: .1rem solid white;
+}
+.banner > .slide > .controls > button.dot.active
+{
+    background-color: rgba(50, 182, 205, .4);
+}
+
+/* FOOTER */
+footer
+{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
