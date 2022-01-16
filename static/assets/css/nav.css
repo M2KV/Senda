@@ -222,7 +222,7 @@ header nav .content-navbar > a.link:hover::after
 {
     position: relative;
     display: block;
-    height: 35rem;
+    height: 55vh;
     text-align: center;
     overflow: hidden;
 }
