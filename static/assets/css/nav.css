@@ -286,10 +286,114 @@ header nav .content-navbar > a.link:hover::after
 }
 
 /* FOOTER */
-footer
+footer .copyright
 {
     text-align: center;
     background-color: black;
     color: white;
     padding: 1rem;
+}
+footer .information
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 3rem;
+    border: .1rem solid lightgray;
+    background-color: rgb(238, 238, 238);
+}
+footer .information .about, footer .information .notice, footer .information .social
+{
+    line-height: 1.8em;
+}
+footer .information .notice > form
+{
+    padding: 2rem;
+    padding-left: 0rem;
+}
+footer .information .notice > form > input[type="email"]
+{
+    padding: .3rem;
+    width: 15vw;
+    outline: none;
+}
+footer .information .notice > form > input[type="submit"]
+{
+    padding: .3rem 1rem;
+    cursor: pointer;
+    background-color: rgb(36, 92, 138);
+    border: .135rem solid rgb(36, 92, 138);
+    color: white;
+    border-radius: .2rem;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+footer .information .notice > form > input[type="submit"]:hover
+{
+    border: .135rem solid rgb(22, 68, 105);
+    background-color: rgb(22, 68, 105);
+}
+footer .information .social 
+{
+    text-align: right;
+}
+footer .information .social .heading
+{
+    display: flex;
+    justify-content: space-around;
+} 
+footer .information .social button
+{
+    font-weight: 600;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+footer .information .social button:hover
+{
+    color: rgb(27, 143, 137);
+}
+footer .information .social button.active
+{
+    color: rgb(22, 112, 108);
+}
+footer .information .social .social-content
+{
+    margin-top: 3rem;
+    font-size: 5vh;
+}
+footer .information .social .social-content .social-btn
+{
+    padding: 1rem;
+    -webkit-transition: .2s all ease;
+    -moz-transition: .2s all ease;
+    -ms-transition: .2s all ease;
+    transition: .2s all ease;
+}
+footer .information .social .social-content .social-btn.facebook
+{
+    color: rgb(17, 77, 168);;
+}
+footer .information .social .social-content .social-btn.facebook:hover
+{
+    color: rgb(51, 126, 238);
+}
+footer .information .social .social-content .social-btn.instagram
+{
+    color: #bc1888;
+}
+footer .information .social .social-content .social-btn.instagram:hover
+{
+    color: #eb5dbe;
+}
+footer .information .social .social-content .social-btn.youtube
+{
+    color: rgb(194, 9, 9);
+}
+footer .information .social .social-content .social-btn.youtube:hover
+{
+    color: rgb(245, 17, 17);;
 }
