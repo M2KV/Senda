@@ -76,7 +76,7 @@
                 <a class="link" title="Không gian" href="./">KHÔNG GIAN</a>
                 <a class="link" title="Sản phẩm" href="./">SẢM PHẨM</a>
                 <a class="link" title="Khuyến mãi" href="./">KHUYẾN MÃI</a>
-                <a class="link" title="Giới thiệu" href="./">GIỚI THIỆU</a>
+                <a class="link" title="Giới thiệu" href="./info.html">GIỚI THIỆU</a>
                 <a class="link" title="Dịch vụ" href="./">DỊCH VỤ</a>
             </div>
         </nav>
